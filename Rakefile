@@ -1,9 +1,5 @@
 $:.unshift 'lib'
 
-ENV['WHMCS_USER'] = 'billing'
-ENV['WHMCS_PASS'] = 'RkvRu05dbHRZ8gpuet'
-ENV['WHMCS_URL']	= 'http://whmcs-devel.fozzy.com/whmcs/includes/api.php'
-
 task :default => :test
 
 require 'rake/testtask'
