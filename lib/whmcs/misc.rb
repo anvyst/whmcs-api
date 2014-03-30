@@ -2,20 +2,6 @@ module WHMCS
   # The WHMCS::Misc class contains miscelaneous WHMCS API functions
   class Misc < Base
 
-    # Perform a whois lookup for a domain name
-    #
-    # Parameters:
-    #
-    # * <tt>:domain</tt> - the domain to check
-    #
-    # See:
-    #
-    # http://wiki.whmcs.com/API:Domain_WHOIS
-    def self.domain_whois(params = {})
-      params.merge!(:action => 'domainwhois')
-      send_request(params)
-    end
-
     # Get activity log
     #
     # Optional attributes:
@@ -96,10 +82,11 @@ module WHMCS
     #
     # See:
     #
-    # http://wiki.whmcs.com/API:Get_Promotions
+		# http://docs.whmcs.com/API:Get_Promotions
     def self.get_promotions(params = {})
-      Invoice.get_promotions(params)
-    end
+			params.merge!(:action => 'getpromotions')
+			send_request(params)
+		end
 
     # Get email templates
     #
