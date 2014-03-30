@@ -104,7 +104,7 @@ module WHMCS
     #
     # See:
     #
-    # http://wiki.whmcs.com/API:Update_Client
+		# http://docs.whmcs.com/API:Update_Client
     def self.update_client(params = {})
       params.merge!(:action => 'updateclient')
       send_request(params)

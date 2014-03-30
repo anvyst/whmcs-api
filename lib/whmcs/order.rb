@@ -67,7 +67,7 @@ module WHMCS
     #
     # See:
     #
-    # http://wiki.whmcs.com/API:Get_Orders
+		# http://docs.whmcs.com/API:Get_Orders
     def self.get_orders(params = {})
       params.merge!(:action => 'getorders')
       send_request(params)
