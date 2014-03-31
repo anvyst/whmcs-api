@@ -23,12 +23,6 @@ whmcs-ruby provides Ruby bindings for the [WHMCS API](http://docs.whmcs.com/API#
 See the [documentation](http://jujav4ik.github.io/whmcs-api) for more details.
 
 
-## Installation
-
-```ruby
-    gem install whmcs-api
-```
-
 ## Copyright
 
 Copyright (c) 2014 anvyst.com, see LICENSE in this repo for details.
