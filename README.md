@@ -2,13 +2,13 @@
 
 [![Build Status](https://travis-ci.org/jujav4ik/whmcs-api.svg?branch=master)](https://travis-ci.org/jujav4ik/whmcs-api) | [![Coverage Status](https://coveralls.io/repos/jujav4ik/whmcs-api/badge.png)](https://coveralls.io/r/jujav4ik/whmcs-api)
 
-whmcs-ruby provides Ruby bindings for the [WHMCS API](http://docs.whmcs.com/API#External_API).
+whmcs-api provides Ruby bindings for the [WHMCS API](http://docs.whmcs.com/API#External_API).
 
 
 ## Usage
 
 ```ruby
-    require 'whmcs'
+    require 'whmcs-api'
 
     WHMCS.configure do |config|
       config.api_url      = 'http://example.com/includes/api.php'
@@ -22,10 +22,14 @@ whmcs-ruby provides Ruby bindings for the [WHMCS API](http://docs.whmcs.com/API#
     WHMCS::Client.get_clients_details(:clientid => '1')
 ```
 
-See the [documentation](http://jujav4ik.github.io/whmcs-api) for more details.
+## Useful links
+
+* [Demo Credentials for WHMCS](http://www.whmcs.com/demo/)
+* [Documentation](http://jujav4ik.github.io/whmcs-api) (in Progress).
 
 
 ## Copyright
 
-Copyright (c) 2014 anvyst.com, see LICENSE in this repo for details.
+Copyright (c) 2014 anvyst.com, under MIT License. Have fun!
+
 Copyright (c) 2011 DotBlock.com, see LICENSE in this repo for details.
