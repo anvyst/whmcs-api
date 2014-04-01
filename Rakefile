@@ -4,7 +4,7 @@ require 'rake/testtask'
 # See: http://www.whmcs.com/demo/
 ENV['WHMCS_USER'] = 'Admin'
 ENV['WHMCS_URL']  = 'http://demo.whmcs.com/includes/api.php'
-ENV['WHMCS_DEMO'] = 'demo'
+ENV['WHMCS_PASS'] = 'demo'
 ENV['WHMCS_KEY']  = 'whmcsdemo'
 
 Rake::TestTask.new(:test) do |test|
