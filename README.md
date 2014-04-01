@@ -25,8 +25,7 @@ whmcs-api provides Ruby bindings for the [WHMCS API](http://docs.whmcs.com/API#E
 ## Useful links
 
 * [Demo Credentials for WHMCS](http://www.whmcs.com/demo/)
-* [Documentation](http://jujav4ik.github.io/whmcs-api) (in Progress).
-
+* [Documentation](http://docs.whmcs.com/API#External_API)
 
 ## Copyright
 
