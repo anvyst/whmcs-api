@@ -3,14 +3,14 @@ module WHMCS
   autoload :Config,		"whmcs/config"
   autoload :Base,			"whmcs/base"
   autoload :Client,		"whmcs/client"
-	autoload :Domain,		"whmcs/domain"
+  autoload :Domain,		"whmcs/domain"
   autoload :Invoice,	"whmcs/invoice"
   autoload :Misc,			"whmcs/misc"
   autoload :Module,		"whmcs/module"
   autoload :Order,		"whmcs/order"
   autoload :Quote,		"whmcs/quote"
   autoload :Ticket,		"whmcs/ticket"
-	autoload :Announcement, "whmcs/announcement"
+  autoload :Announcement, "whmcs/announcement"
 
   class << self
     attr_accessor :config

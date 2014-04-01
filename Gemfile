@@ -1,3 +1,4 @@
 source 'https://rubygems.org'
 gemspec
-gem 'rack'
+gem 'rake', '>= 1.5.2'
+gem 'rdoc'
