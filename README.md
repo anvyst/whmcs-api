@@ -10,17 +10,20 @@ whmcs-api provides Ruby bindings for the [WHMCS API](http://docs.whmcs.com/API#E
 ```ruby
     require 'whmcs-api'
 
-    WHMCS.configure do |config|
-      config.api_url      = 'http://example.com/includes/api.php'
-      config.api_username = 'someusername'
-      config.api_password = 'c4ca4238a0b923820dcc509a6f75849b' # md5 hash
-	  # optionally add access key
-	  config.api_key = 'YetAnotherAPIAccessKeyForWHMCS'
+	WHMCS.configure do |config|
+		config.api_url      = 'http://example.com/includes/api.php'
+		config.api_username = 'someusername'
+		config.api_password = 'c4ca4238a0b923820dcc509a6f75849b' # md5 hash
+		# optionally add access key
+		config.api_key = 'YetAnotherAPIAccessKeyForWHMCS'
 
 	end
 
     WHMCS::Client.get_clients_details(:clientid => '1')
 ```
+
+
+
 
 ## Useful links
 
