@@ -32,12 +32,12 @@
 
 <p><a href="https://travis-ci.org/jujav4ik/whmcs-api"><img src="https://travis-ci.org/jujav4ik/whmcs-api.svg?branch=master" alt="Build Status"></a> | <a href="https://coveralls.io/r/jujav4ik/whmcs-api"><img src="https://coveralls.io/repos/jujav4ik/whmcs-api/badge.png" alt="Coverage Status"></a></p>
 
-<p>whmcs-ruby provides Ruby bindings for the <a href="http://docs.whmcs.com/API#External_API">WHMCS API</a>.</p>
+<p>whmcs-api provides Ruby bindings for the <a href="http://docs.whmcs.com/API#External_API">WHMCS API</a>.</p>
 
 <h2>
 <a name="usage" class="anchor" href="#usage"><span class="octicon octicon-link"></span></a>Usage</h2>
 
-<div class="highlight highlight-ruby"><pre>    <span class="nb">require</span> <span class="s1">'whmcs'</span>
+<div class="highlight highlight-ruby"><pre>    <span class="nb">require</span> <span class="s1">'whmcs-api'</span>
 
     <span class="no">WHMCS</span><span class="o">.</span><span class="n">configure</span> <span class="k">do</span> <span class="o">|</span><span class="n">config</span><span class="o">|</span>
       <span class="n">config</span><span class="o">.</span><span class="n">api_url</span>      <span class="o">=</span> <span class="s1">'http://example.com/includes/api.php'</span>
@@ -51,13 +51,19 @@
     <span class="no">WHMCS</span><span class="o">::</span><span class="no">Client</span><span class="o">.</span><span class="n">get_clients_details</span><span class="p">(</span><span class="ss">:clientid</span> <span class="o">=&gt;</span> <span class="s1">'1'</span><span class="p">)</span>
 </pre></div>
 
-<p>See the <a href="http://jujav4ik.github.io/whmcs-api">documentation</a> for more details.</p>
-
 <h2>
+<a name="useful-links" class="anchor" href="#useful-links"><span class="octicon octicon-link"></span></a>Useful links</h2>
+
+<ul>
+<li><a href="http://www.whmcs.com/demo/">Demo Credentials for WHMCS</a></li>
+<li>
+<a href="http://jujav4ik.github.io/whmcs-api">Documentation</a> (in Progress).</li>
+</ul><h2>
 <a name="copyright" class="anchor" href="#copyright"><span class="octicon octicon-link"></span></a>Copyright</h2>
 
-<p>Copyright (c) 2014 anvyst.com, see LICENSE in this repo for details.
-Copyright (c) 2011 DotBlock.com, see LICENSE in this repo for details.</p>
+<p>Copyright (c) 2014 anvyst.com, under MIT License. Have fun!</p>
+
+<p>Copyright (c) 2011 DotBlock.com, see LICENSE in this repo for details.</p>
       </section>
     </div>
     <footer>
