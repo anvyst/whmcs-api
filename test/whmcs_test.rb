@@ -1,17 +1,14 @@
-require File.dirname(__FILE__) + '/test_helper.rb'
+require_relative 'test_helper'
 
 class WHMCSTest < Test::Unit::TestCase
-  context "WHMCS::Base.send_request" do
+  def test__EncDecPassword__returningCorrectVal
+    # ensuring encrypted password returns '=' at the end
+    test = "test13413412asdfasdflkhjasdf"
 
-    should "raise an error if params[:action] is not set" do
-      assert_raise RuntimeError do
-        WHMCS::Base.send_request
-      end
-    end
+    result    = WHMCS::Misc.encrypt_password(:password2 => test)
+    decrypted = WHMCS::Misc.decrypt_password(:password2 => result['password'])
 
-    should "return a hash" do
-      res = WHMCS::Client.get_clients_details(:clientid => '1')
-      assert res.is_a?(Hash)
-    end
+    assert_equal(decrypted['password'], test)
+    assert_equal(result['result'], decrypted['result']) 
   end
 end

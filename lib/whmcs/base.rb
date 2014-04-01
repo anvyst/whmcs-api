@@ -13,7 +13,7 @@ module WHMCS
     #
     # All other paramters are passed along as HTTP POST variables
     def self.send_request(params = {})
-      if params[:action].blank?
+      if params[:action].empty?
         raise "No API action set"
       end
 
@@ -22,10 +22,10 @@ module WHMCS
         :password => WHMCS.config.api_password
       )
 
-			# alternative API access
-			if( !WHMCS.config.api_key.nil? )
-				params.merge!( :accesskey => WHMCS.config.api_key )
-			end
+      # alternative API access
+      if( !WHMCS.config.api_key.nil? )
+        params.merge!( :accesskey => WHMCS.config.api_key )
+      end
 
       url = URI.parse(WHMCS.config.api_url)
 
@@ -37,20 +37,20 @@ module WHMCS
 
       req = Net::HTTP::Post.new(url.path)
       req.set_form_data(params)
-
       res = http.start { |http| http.request(req) }
       parse_response(res.body)
     end
 
     # Converts the API response to a Hash
     def self.parse_response(raw)
-      return {} if raw.to_s.blank?
+      #return {} if raw.to_s.blank?
+      return {} if raw.to_s.empty?
 
       if raw.match(/xml version/)
         Crack::XML.parse(raw)
       else
         # in case of password encrypt/decrypt - '=' should be properly parsed
-				Hash[raw.split(';').map { |line| line.split('=') }]
+        Hash[raw.split(';').map { |line| line.split('=') }]
       end
     end
   end

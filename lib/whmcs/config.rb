@@ -10,15 +10,15 @@ module WHMCS
     # The WHMCS API URL
     attr_accessor :api_url
 
-	# The WHMCS API Access Key
-	attr_accessor :api_key
+    # The WHMCS API Access Key
+    attr_accessor :api_key
 
     # Create a new config object
     def initialize
-      @api_username = 'example_api_user'
-      @api_password = 'example_api_pass'
-      @api_url      = 'http://example.com/api.php'
-	  @api_key = '3x4mpL3_k3y'
+      @api_username = 'Admin'
+      @api_password = 'demo-in-md5'
+      @api_url      = 'http://demo.whmcs.com/includes/api.php'
+      @api_key      = 'whmcsdemo'
     end
   end
 end
