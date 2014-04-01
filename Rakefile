@@ -1,7 +1,5 @@
 $:.unshift 'lib'
 
-task :default => :test
-
 require 'rake/testtask'
 Rake::TestTask.new(:test) do |test|
   test.libs << 'lib' << 'test' << '.'
@@ -10,3 +8,4 @@ Rake::TestTask.new(:test) do |test|
 	test.warning = true
 end
 
+task :default => :test
