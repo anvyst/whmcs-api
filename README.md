@@ -2,6 +2,8 @@
 
 [![Build Status](https://travis-ci.org/jujav4ik/whmcs-api.svg?branch=master)](https://travis-ci.org/jujav4ik/whmcs-api)
 
+[![Coverage Status](https://coveralls.io/repos/jujav4ik/whmcs-api/badge.png)](https://coveralls.io/r/jujav4ik/whmcs-api)
+
 whmcs-ruby provides Ruby bindings for the [WHMCS API](http://docs.whmcs.com/API#External_API).
 
 
