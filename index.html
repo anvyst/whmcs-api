@@ -1,0 +1,71 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Whmcs-api by jujav4ik</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>Whmcs-api</h1>
+        <p>WHMCS API module for Ruby originally taken from whmcs-ruby gem</p>
+
+        <p class="view"><a href="https://github.com/jujav4ik/whmcs-api">View the Project on GitHub <small>jujav4ik/whmcs-api</small></a></p>
+
+
+        <ul>
+          <li><a href="https://github.com/jujav4ik/whmcs-api/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/jujav4ik/whmcs-api/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/jujav4ik/whmcs-api">View On <strong>GitHub</strong></a></li>
+        </ul>
+      </header>
+      <section>
+        <h1>
+<a name="whmcs-ruby" class="anchor" href="#whmcs-ruby"><span class="octicon octicon-link"></span></a>whmcs-ruby</h1>
+
+<p><a href="https://travis-ci.org/jujav4ik/whmcs-api"><img src="https://travis-ci.org/jujav4ik/whmcs-api.svg?branch=master" alt="Build Status"></a> | <a href="https://coveralls.io/r/jujav4ik/whmcs-api"><img src="https://coveralls.io/repos/jujav4ik/whmcs-api/badge.png" alt="Coverage Status"></a></p>
+
+<p>whmcs-ruby provides Ruby bindings for the <a href="http://docs.whmcs.com/API#External_API">WHMCS API</a>.</p>
+
+<h2>
+<a name="usage" class="anchor" href="#usage"><span class="octicon octicon-link"></span></a>Usage</h2>
+
+<div class="highlight highlight-ruby"><pre>    <span class="nb">require</span> <span class="s1">'whmcs'</span>
+
+    <span class="no">WHMCS</span><span class="o">.</span><span class="n">configure</span> <span class="k">do</span> <span class="o">|</span><span class="n">config</span><span class="o">|</span>
+      <span class="n">config</span><span class="o">.</span><span class="n">api_url</span>      <span class="o">=</span> <span class="s1">'http://example.com/includes/api.php'</span>
+      <span class="n">config</span><span class="o">.</span><span class="n">api_username</span> <span class="o">=</span> <span class="s1">'someusername'</span>
+      <span class="n">config</span><span class="o">.</span><span class="n">api_password</span> <span class="o">=</span> <span class="s1">'c4ca4238a0b923820dcc509a6f75849b'</span> <span class="c1"># md5 hash</span>
+      <span class="c1"># optionally add access key</span>
+      <span class="n">config</span><span class="o">.</span><span class="n">api_key</span> <span class="o">=</span> <span class="s1">'YetAnotherAPIAccessKeyForWHMCS'</span>
+
+    <span class="k">end</span>
+
+    <span class="no">WHMCS</span><span class="o">::</span><span class="no">Client</span><span class="o">.</span><span class="n">get_clients_details</span><span class="p">(</span><span class="ss">:clientid</span> <span class="o">=&gt;</span> <span class="s1">'1'</span><span class="p">)</span>
+</pre></div>
+
+<p>See the <a href="http://jujav4ik.github.io/whmcs-api">documentation</a> for more details.</p>
+
+<h2>
+<a name="copyright" class="anchor" href="#copyright"><span class="octicon octicon-link"></span></a>Copyright</h2>
+
+<p>Copyright (c) 2014 anvyst.com, see LICENSE in this repo for details.
+Copyright (c) 2011 DotBlock.com, see LICENSE in this repo for details.</p>
+      </section>
+      <footer>
+        <p>This project is maintained by <a href="https://github.com/jujav4ik">jujav4ik</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
+    </div>
+    <script src="javascripts/scale.fix.js"></script>
+    
+  </body>
+</html>
