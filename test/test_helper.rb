@@ -1,6 +1,9 @@
 require 'rubygems'
 require 'test/unit'
 require 'shoulda'
+require 'coveralls'
+
+Coveralls.wear!
 
 begin
   require 'turn'
