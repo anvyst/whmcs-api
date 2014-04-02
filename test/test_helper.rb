@@ -7,7 +7,7 @@ require 'coveralls'
 
 SimpleCov.formatter = Coveralls::SimpleCov::Formatter
 SimpleCov.start do
-    add_filter 'test/*_test.rb'
+    add_filter '/_test.rb/'
 end
 
 #Coveralls.wear!
