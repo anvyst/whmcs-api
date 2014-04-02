@@ -3,7 +3,7 @@ require 'test/unit'
 
 require 'coveralls'
 
-Coveralls.wear!
+#Coveralls.wear!
 
 begin
   require 'turn'

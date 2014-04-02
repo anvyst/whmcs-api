@@ -43,14 +43,18 @@ module WHMCS
 
     # Converts the API response to a Hash
     def self.parse_response(raw)
-      #return {} if raw.to_s.blank?
-      return {} if raw.to_s.empty?
-
+      result = {}
+      return result if raw.to_s.empty?
+      
       if raw.match(/xml version/)
         Crack::XML.parse(raw)
       else
         # in case of password encrypt/decrypt - '=' should be properly parsed
-        Hash[raw.split(';').map { |line| line.split('=') }]
+        raw.split(';').map do |line|
+          m = /^(\w+)\=(.*)$/.match(line)
+          result[ m[1] ] = m[2]
+        end
+        result
       end
     end
   end
