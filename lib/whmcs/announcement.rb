@@ -8,7 +8,10 @@ module WHMCS
     # * <tt>:title</tt> - Title of the announcement
     # * <tt>:announcement</tt> - Announcement text
     # * <tt>:published</tt> - on/off
-    #
+    # 
+    # Returns:
+    #  * <tt>:result</tt>
+    #  * <tt>:announcementid</tt>
     # See:
     #
     # http://docs.whmcs.com/API:Add_Announcement
@@ -34,32 +37,33 @@ module WHMCS
       send_request(params)
     end
 
-		# Get Announcements
-		# This command is used to get a list of the announcements in XML format
-		#
-		# Parameters:
-		# * <tt>:limitstart</tt> - used for pagination, start at a certain ID
-		# * <tt>:limitnum</tt> - restrict number of records
-		#
-		# See:
-		#
-		# http://docs.whmcs.com/API:Get_Announcements
-		def self.get_announcements(params ={})
-			params.merge!(:action => 'getannouncements')
-			send_request(params)
-		end
+    # Get Announcements
+    # This command is used to get a list of the announcements in XML format
+    #
+    # Parameters:
+    # * <tt>:limitstart</tt> - used for pagination, start at a certain ID
+    # * <tt>:limitnum</tt> - restrict number of records
+    #
+    # See:
+    #
+    # http://docs.whmcs.com/API:Get_Announcements
+    def self.get_announcements(params ={})
+      params.merge!(:action => 'getannouncements')
+      send_request(params)
+    end
 
-		# Delete Announcement
-		#
-		# Parameters:
-		# * <tt>:announcementid</tt> - The ID of the announcement to delete
-		#
-		# See:
-		#
-		# http://docs.whmcs.com/API:Delete_Announcement
-		def self.delete_announcement(params = {})
-			params.merge!(:action => 'deleteannouncement')
-			send_request(params)
-		end
-	end
+    # Delete Announcement
+    #
+    # Parameters:
+    # * <tt>:announcementid</tt> - The ID of the announcement to delete
+    #
+    # See:
+    #
+    # http://docs.whmcs.com/API:Delete_Announcement
+    def self.delete_announcement(params = {})
+      params.merge!(:action => 'deleteannouncement')
+      send_request(params)
+    end
+  end
+
 end
