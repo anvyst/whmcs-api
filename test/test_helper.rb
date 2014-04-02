@@ -1,9 +1,16 @@
 require 'rubygems'
 require 'test/unit'
 
+require 'simplecov'
 require 'coveralls'
 
-Coveralls.wear!
+
+SimpleCov.formatter = Coveralls::SimpleCov::Formatter
+SimpleCov.start do
+    add_filter 'test/*_test.rb'
+end
+
+#Coveralls.wear!
 
 begin
   require 'turn'
