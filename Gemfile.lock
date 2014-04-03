@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    whmcs-api (0.0.3)
+    whmcs-api (0.0.4)
       crack (> 0.1.8)
 
 GEM
