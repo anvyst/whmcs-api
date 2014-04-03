@@ -17,7 +17,7 @@ begin
 rescue LoadError
 end
 
-require 'whmcs'
+require 'whmcs-api'
 
 WHMCS.configure do |config|
   config.api_username = ENV['WHMCS_USER'] or raise "You must set the env variable WHMCS_USER"
