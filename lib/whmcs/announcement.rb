@@ -1,6 +1,6 @@
 module WHMCS
-	class Announcement < Base
-		# Add Announcement
+  class Announcement < Base
+    # Add Announcement
     # This command is used to Add a new announcement to the system
     #
     # Parameters:
@@ -20,7 +20,7 @@ module WHMCS
       send_request(params)
     end
 
-		# Update Announcement
+    # Update Announcement
     #
     # Parameters:
     # * <tt>:announcementid</tt> - ID of the announcement to edit
