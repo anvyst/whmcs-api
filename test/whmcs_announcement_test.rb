@@ -10,9 +10,9 @@ class WHMCSAnnouncementTest < Test::Unit::TestCase
       :published    => 'off'
     }
 
-    resulted_announce = WHMCS::Announcement.get_announcements()
 
     resulted = WHMCS::Announcement.add_announcement( passing_data )
+    resulted_announce = WHMCS::Announcement.get_announcements()
     
     updated_announcement = WHMCS::Announcement.update_announcement(
       :announcementid => resulted['announcementid'],
@@ -22,6 +22,7 @@ class WHMCSAnnouncementTest < Test::Unit::TestCase
     deleted_announcement = WHMCS::Announcement.delete_announcement(:announcementid => resulted['announcementid'])
 
     assert_equal('success', updated_announcement['result'])
+    assert_not_equal({}, resulted_announce)
     assert_equal(resulted['announcementid'], deleted_announcement['announcementid'])
     assert_equal('success', deleted_announcement['result'])
     assert_equal('success', resulted['result'])
