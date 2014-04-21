@@ -1,6 +1,6 @@
 require 'rubygems'
 require 'test/unit'
-=begin
+
 require 'simplecov'
 require 'coveralls'
 
@@ -8,7 +8,7 @@ SimpleCov.formatter = Coveralls::SimpleCov::Formatter
 SimpleCov.start do
     add_filter '/_test.rb/'
 end
-=end
+
 begin
   require 'turn'
 rescue LoadError
