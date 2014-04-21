@@ -193,9 +193,11 @@ module WHMCS
 	#
 	# * <tt>:limitstart</tt> - Record to start at (default = 0)
 	# * <tt>:limitnum</tt> - Number of records to return (default = 25)
-	# * <tt>:search</tt> - Can be passed to filter for clients with a name/email matching the term entered
+  #
+	# Optional attributes:
+  # * <tt>:search</tt> - Can be passed to filter for clients with a name/email matching the term entered
 	#
-	# See:
+  # See:
 	#
 	# http://docs.whmcs.com/API:Get_Clients
 	def self.get_clients(params = {})
