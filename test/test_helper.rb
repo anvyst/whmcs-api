@@ -4,10 +4,7 @@ require 'test/unit'
 require 'simplecov'
 require 'coveralls'
 
-SimpleCov.formatter = Coveralls::SimpleCov::Formatter
-SimpleCov.start do
-    add_filter '/_test.rb/'
-end
+Coveralls.wear!
 
 begin
   require 'turn'
