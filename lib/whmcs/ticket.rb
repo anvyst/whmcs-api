@@ -219,7 +219,7 @@ module WHMCS
     # See:
     #
 		# http://docs.whmcs.com/API:Get_Ticket_Predefined_Replies
-    def self.get_ticket_predefined_repies(params = {})
+    def self.get_ticket_predefined_replies(params = {})
       params.merge!(:action => 'getsupportstatuses')
       send_request(params)
     end
