@@ -1,15 +1,12 @@
 require 'rubygems'
-require 'test/unit'
+require "minitest/autorun"
 
 require 'simplecov'
-require 'coveralls'
 
-SimpleCov.formatter = Coveralls::SimpleCov::Formatter
-SimpleCov.start do
-    add_filter 'test/'
+SimpleCov.command_name 'test:units'
+SimpleCov.start do 
+  add_filter 'test/'
 end
-Coveralls.wear!
-
 
 begin
   require 'turn'

@@ -1,6 +1,6 @@
 require_relative 'test_helper'
 
-class WHMCSTest < Test::Unit::TestCase
+class WHMCSTest < Minitest::Test
   # in certain occasions encrypt call returns hash that includes '='
   def test__parse_response__parsedCorrectlyHashesWithEqSign
     expected = "result=succes;password=12lkjdfosifusdlfsdfmlasdof==;"

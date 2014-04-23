@@ -1,6 +1,6 @@
 require_relative 'test_helper'
 
-class WHMCSAnnouncementTest < Test::Unit::TestCase
+class WHMCSAnnouncementTest < Minitest::Test
   # dummy testing of announcement functionality
   def test__basic_announcement_crud__passingValidData
     passing_data = {

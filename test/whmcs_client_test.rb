@@ -1,6 +1,6 @@
 require 'test_helper'
 
-class WhmcsClientTest < Test::Unit::TestCase
+class WhmcsClientTest < Minitest::Test
 
   def test__crud_operations_on_client
     test_data = {

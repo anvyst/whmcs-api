@@ -1,6 +1,6 @@
 require_relative 'test_helper'
 
-class WHMCSBaseTest < Test::Unit::TestCase
+class WHMCSBaseTest < Minitest::Test
   # in certain occasions encrypt call returns hash that includes '='
   def test__passwordEncryption
     result = WHMCS::Misc.encrypt_password(:password2 => 'test')
