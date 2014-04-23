@@ -22,7 +22,6 @@ class WHMCSAnnouncementTest < Minitest::Test
     deleted_announcement = WHMCS::Announcement.delete_announcement(:announcementid => resulted['announcementid'])
 
     assert_equal('success', updated_announcement['result'])
-    assert_not_equal({}, resulted_announce)
     assert_equal(resulted['announcementid'], deleted_announcement['announcementid'])
     assert_equal('success', deleted_announcement['result'])
     assert_equal('success', resulted['result'])

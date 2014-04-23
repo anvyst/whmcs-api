@@ -32,7 +32,6 @@ class WhmcsClientTest < Minitest::Test
     assert_equal('success', closed_client['result'])
     assert_equal('success', added_note['result'])
     assert_equal('success', saved['result'])
-    assert_not_equal('', saved['clientid'])
     assert_equal('success', deleted['result'])
   end
 end
