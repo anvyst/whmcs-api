@@ -84,9 +84,9 @@ module WHMCS
     #
 		# http://docs.whmcs.com/API:Get_Promotions
     def self.get_promotions(params = {})
-			params.merge!(:action => 'getpromotions')
-			send_request(params)
-		end
+      params.merge!(:action => 'getpromotions')
+      send_request(params)
+    end
 
     # Get email templates
     #
