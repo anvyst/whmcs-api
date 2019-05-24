@@ -50,7 +50,7 @@ module WHMCS
         Crack::XML.parse(raw)
       else
         # in case of password encrypt/decrypt - '=' should be properly parsed
-        CGI::unescapeHTML(raw).split(';').map do |line|
+        CGI::unescapeHTML(raw).encode("UTF-8").split(';').map do |line|
           m = /^(\w+)\=(.*)$/.match(line)
           result[ m[1] ] = m[2]
         end
