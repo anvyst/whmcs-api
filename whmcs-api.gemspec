@@ -9,7 +9,7 @@ Gem::Specification.new do |s|
   s.summary          = 'whmcs-api: Ruby bindings for the WHMCS API'
   s.homepage         = 'https://github.com/jujav4ik/whmcs-api'
   s.authors          = ['Andrey Vystavkin']
-  s.email            = 'jujav4ik@gmail.com'
+  s.email            = 'andrey.vystavkin@gmail.com'
 
   s.files            = %w[ Rakefile README.md ]
 
