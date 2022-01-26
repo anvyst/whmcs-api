@@ -7,7 +7,7 @@ Gem::Specification.new do |s|
   s.version          = WHMCS::Version
   s.date             = Time.now.strftime('%Y-%m-%d')
   s.summary          = 'whmcs-api: Ruby bindings for the WHMCS API'
-  s.homepage         = 'https://github.com/jujav4ik/whmcs-api'
+  s.homepage         = 'https://github.com/anvyst/whmcs-api'
   s.authors          = ['Andrey Vystavkin']
   s.email            = 'andrey.vystavkin@gmail.com'
 
