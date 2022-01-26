@@ -1,3 +1,3 @@
 module WHMCS #:nodoc:
-  VERSION = Version = '0.1.2'
+  VERSION = Version = '2.0.0'
 end
